@@ -1,7 +1,7 @@
 /**
  * @param {number[]} nums
  * @param {number} target
- * @return {number[]}
+ * @return {number[]} - the indexes
  */
 var twoSum = function(nums, target) {
     let m = new Map();
@@ -15,3 +15,7 @@ var twoSum = function(nums, target) {
         m.set(nums[i], i);
     }
 };
+
+// test cases
+let testCase = [10, 3, 4, 6, 9, 20]
+console.log(testCase, 10, "->", twoSum(testCase, 10))
